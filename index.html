@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Sakthivel K</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Sakthivel Krishnamoorthy</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="./index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#experience">Experience</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#education">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact-footer">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">Skills</a>
+                <a href="">Services</a>
+                <a href="">Blogs</a>
+                <a href="">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="./IMG1.png" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Sakthivel</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Hello! I'm Sakthivel, a passionate Frontend Developer and an IITM BS ES (Bachelor of Science in Electronic Systems) student. I specialize in creating dynamic, user-friendly, and visually appealing web interfaces. My journey in technology has been fueled by a love for problem-solving and a drive to bring ideas to life through Coding n Circuitry.Beyond coding, I enjoy exploring emerging trends in web development,Work on Core projects, learning new tools, and sharing knowledge with my peers. When I’m not coding, you’ll find me tinkering with embedded systems or working on Core IoT projects. Let’s connect and collaborate to build something extraordinary!"</p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://github.com/Work-with-velu" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/x_.sxkthi_vxl._x?igsh=cDl4a211bTV0OW4%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
+                        <a href="https://www.linkedin.com/in/sakthivel-k-217b6b279/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <a href="./Sakthivel_K_CV.pdf" download="Sakthivel_CV"><button>Download CV</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="contact-footer">
+        <div class="footer-container">
+            <div class="footer-content" data-aos="fade-up" data-aos-duration="1000">
+                <h3 id="footer_elements">Contact Me</h3>
+                <p id="footer_elements">Email: sakthivel.k.ece26@psvpec.in</p>
+                <p id="footer_elements">Phone: +91-7550180635</p>
+                <p id="footer_elements">Address: 80/1B Rassappa St, Chennai, Tamil Nadu, India</p>
+
+            </div>
+            <div class="footer-bottom" id="footer_elements" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <p>&copy; 2024 Sakthivel Krishnamoorthy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+        
+</body>
+</html>
