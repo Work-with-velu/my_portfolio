@@ -229,6 +229,7 @@ section {
 }
 .social-links{
     padding-left: 25%;
+    margin-left: 2%;
 }
 .btn{
     padding-left: 23%;
@@ -241,6 +242,7 @@ body {
 }
 #contact-footer{
     text-align: center;
+    margin-top: 25px;
 }
 #contact-footer #footer_elements{
     padding-top: 5px;
@@ -250,4 +252,31 @@ body {
 }
 .nav-container .links{
     padding-left: 15%;
+}
+.content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto; /* Adjust width based on content */
+    padding: 10px 20px; /* Ensure enough space */
+    white-space: nowrap; /* Prevent text wrapping */
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    transform: 0.3s linear;
+    margin-left: 0;
+    
+}
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px; /* Add spacing between buttons */
+    flex-wrap:wrap; Ensure responsiveness
+    text-decoration: none   
+
+}
+.downbtns
+{
+    text-decoration: none;
 }
